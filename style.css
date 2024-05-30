@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+h2{
+    color: white;
+    font-size: 48px;
+}
+p{
+    color: white;
+    font-size: 24px;
+}
+hr{
+    height: 4px;
+    background-color: #262525;
+    border: 1px solid #262525;
+}
+header{
+    background-image: url(banner.jpg);
+    background-size: cover;
+    height: 44rem;
+}
+
+.nav-bar{
+    height: 6rem;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-bar .netflix-logo{
+    height: 130px;
+}
+
+.nav-bar div select{
+    width: 124px;
+    height: 32px;
+    padding: 0.4rem 1.8rem;
+    border-radius: 0.3rem;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border: -1.5px solid white;
+    cursor: pointer;
+}
+
+.nav-bar div a{
+    width: 114px;
+    height: 32px;
+    padding: 0.4rem 1rem;
+    background-color: rgb(247, 9, 9);
+    text-decoration: none;
+    border-radius: 0.3rem;
+    color: white;
+    /* opacity: 0; */
+}
+.welcomeNetflix{
+   line-height: 4rem;
+   margin: 10%;
+}
+
+.welcomeNetflix p{
+    font-size: 24px;
+    color: white;
+    
+}
+.welcomeNetflix h1{
+    font-size: 48px;
+    color: white;
+    
+}
+
+.welcomeNetflix input{
+    background-color:#000;
+    position: relative;
+    bottom: 2px;
+    opacity: 0.5;
+    border: 1px solid rgb(116, 115, 115);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width:360px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@media(max-width:460px){
+    .welcomeNetflix input{
+        width: 200px;
+    }
+}
+.welcomeNetflix input::placeholder{
+    color: rgb(252, 252, 252);
+}
+.welcomeNetflix button{
+    border: none;
+    border-radius: 0.3rem;
+    width: 202px;
+    height: 56px;
+    /* padding: 1rem 2rem; */
+    color: white;
+    font-size: 1.5rem;
+    background-color:rgb(247, 9, 9) ;
+    cursor: pointer;
+}
+
+.contents{
+    background-color: black;
+    padding: 72px 0px;
+    
+}
+.contents span{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 167px;
+}
+
+
+.contents .questions{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 200px;
+
+}
+.contents .questions h2{
+    text-align: center;
+}
+.contents .questions button{
+    height: 72px;
+    background-color:#262525 ;
+    border: none;
+    margin: 5px;
+    color: white;
+    padding: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    
+}
+.contents .questions button img{
+    height: 36px;
+    width: 36px;
+   
+}
+/* footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contents div ul{
+    display: grid;
+    grid-template-rows: 20px 20px 20px 20px ;
+    grid-template-columns: 200px 200px 200px 200px;
+}
+.contents div ul li{
+    color: white;
+    width: 700px; 
+    height: 50px;
+    text-align: left;
+    display: inline;
+    font-size:10px;
+    opacity: 0.5;
+    text-decoration: underline;
+    cursor: pointer;
+} */
+.contents .helpLine{
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    left: 50px;
+    margin-bottom:12px ;
+}
+.contents .helpLine a{
+    color: white;
+    opacity: 0.8;
+}
+.contents .footerlist ul li{
+    list-style: none;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: white;
+    line-height: 2rem;
+}
+
+.contents .footerlist{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#language{
+    width: 124px;
+    height: 32px;
+    padding: 0.4rem 1.8rem;
+    border-radius: 0.3rem;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border: -1.5px solid white;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+}
+#netflixIndia{
+    position: absolute;
+    left: 50px;
+    font-weight: 500;
+    margin-top:20px ;
+    opacity: 0.8;
+}
+.selectimg{
+    height: 25px;
+    width:25px;
+    position: relative;
+    top: 10px;                                           
+    left: 40px;
+}
+
+@media (max-width:400px){
+    .nav-bar{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width:1300px){
+    .contents span{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width:650px){
+    .contents span img{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media(max-width:400px){
+    .contents span img{
+        height: 150px;
+        width: 200px;
+    }
+}
+@media(max-width:650px){
+    .contents .questions{
+        margin: 10px;
+    }
+}
+@media(max-width:600px){
+    .contents .footerlist {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        align-items: center;
+    
+    }
+}
